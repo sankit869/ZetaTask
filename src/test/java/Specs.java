@@ -26,7 +26,7 @@ public class Specs extends BaseTest{
     @Test
     public void verifyCategoryWithInvalidURI(){
         Header header=new Header("user-key","89ea4ede8e543bawqfd88fa07ccbc3ceec6");
-        response = apiUtils.getRequest(Endpoint.CATEGORIES+"esd",header);
+        response = apiUtils.getRequest(Endpoint.CATEGORIES+"esddd",header);
         response.then().assertThat().statusCode(404);
     }
     @Test
